@@ -1,0 +1,22 @@
+# Specify configuration
+
+# mAb neutralization data
+mAb_neuts: data/mAb_neuts/mAB_neuts_frac_infectivity.csv
+mAb_neuts_VSVG: data/mAb_neuts/mAB_neuts_frac_infectivity_VSVG.csv
+
+# Virus titration
+virus_titers_functional: data/virus_titer_RLU/virus_titer_RLU.csv
+virus_titers_antibody: data/virus_titer_RLU/virus_titers_antibody_validations.csv
+
+# Results
+resultsdir: results/
+summary_dir: results/summary/
+neuts: results/neuts.csv
+
+
+# yeast and lentivirus DMS comparison data
+
+yeast_dms_lycov1404_Star: data/yeast_lenti_dms_comparison/lycov1404_yeast_Star.csv
+lenti_dms_lycov1404: data/yeast_lenti_dms_comparison/lycov1404_lentivirus.csv
+
+
