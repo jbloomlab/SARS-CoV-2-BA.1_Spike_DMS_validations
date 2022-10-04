@@ -8,6 +8,8 @@ mAb_neuts_VSVG: data/mAb_neuts/mAB_neuts_frac_infectivity_VSVG.csv
 virus_titers_functional: data/virus_titer_RLU/virus_titer_RLU.csv
 virus_titers_antibody: data/virus_titer_RLU/virus_titers_antibody_validations.csv
 
+titer_fold_change: data/titer_fold_change/functional_titer_fols_change.csv
+
 # Results
 resultsdir: results/
 summary_dir: results/summary/

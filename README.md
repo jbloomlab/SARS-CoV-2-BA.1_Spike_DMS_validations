@@ -7,6 +7,7 @@ Original BA.1 full spike deep mutational scanning data can be found [here](https
 These scripts preform the following:
 
 - [virus_titers_for_mAb_escape.ipynb](virus_titers_for_mAb_escape.ipynb) and [virus_titers_functional_mutants.ipynb](virus_titers_functional_mutants.ipynb) calculate titers for pseudotyped viruses used either for antibody escape or spike function analysis. 
+-[functional_virus_titer_fold_change.ipynb](functional_virus_titer_fold_change.ipynb) plots fold chance in virus titers compared to unmutated spike
 - [spike_neutralization.ipynb](spike_neutralization.ipynb) runs neutralization analysis for spike mutants against different monoclonal antibodies
 - [VSVG_neutralization.ipynb](VSVG_neutralization.ipynb) runs neutralization analysis for VSV-G or unmutated BA.1 spike pseudotyped lentivirus against different monoclonal antibodies
 - [Lycov1404_yeast_lenti_dms_comparison.ipynb](Lycov1404_yeast_lenti_dms_comparison.ipynb) compares deep mutational scanning data for full spike lentivirus-based DMS and [yeast-based RBD DMS](https://www.biorxiv.org/content/10.1101/2022.09.20.508745v1). 
