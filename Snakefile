@@ -34,7 +34,8 @@ rule all:
         'results/summary/virus_titers_functional_mutants.md',
         'results/summary/spike_neutralization.md',
         'results/summary/VSVG_neutralization.md',
-        'results/summary/Lycov1404_yeast_lenti_dms_comparison.md'
+        'results/summary/Lycov1404_yeast_lenti_dms_comparison.md',
+        'results/summary/functional_virus_titer_fold_change.md'
         
 
 
@@ -87,12 +88,23 @@ rule plot_neuts_VSVG:
 rule compare_yeastDMS_vs_lentiDMS:
     """compare yeast and lentivirus DMS for Ly-CoV1404"""
     input:
-        yest_DMS=config['yeast_dms_lycov1404_Star'],
+        yeast_DMS=config['yeast_dms_lycov1404_Star'],
         lenti_DMS=config['lenti_dms_lycov1404']
     output:
         nb_markdown=nb_markdown('Lycov1404_yeast_lenti_dms_comparison.ipynb')
     params:
         nb='Lycov1404_yeast_lenti_dms_comparison.ipynb'
+    shell:
+        "python scripts/run_nb.py {params.nb} {output.nb_markdown}"
+
+rule functional_iter_fold_change:
+    """compare yeast and lentivirus DMS for Ly-CoV1404"""
+    input:
+        titer_fold_change=config['titer_fold_change'],
+    output:
+        nb_markdown=nb_markdown('functional_virus_titer_fold_change.ipynb')
+    params:
+        nb='functional_virus_titer_fold_change.ipynb'
     shell:
         "python scripts/run_nb.py {params.nb} {output.nb_markdown}"
 
